@@ -1,0 +1,70 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  8.0                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     8.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      windkesselProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+OUTLET1
+{
+  	C   				3.881413e-10;
+  	R   				2.440637e+09;
+  	Z   				2.171086e+09;
+  	outIndex 			0;		//must equal 'index' value in 0/p
+	FDM_order			3;		//finite backward difference order: up to 3rd order
+
+	//Initialise
+	Flowrate_threeStepBefore      	0;	
+	Flowrate_twoStepBefore        	0;
+	Flowrate_oneStepBefore        	0;
+	Pressure_twoStepBefore        	0;
+	Pressure_oneStepBefore        	0;
+	Pressure_start                	0;
+
+}
+
+OUTLET2
+{
+  	C  				3.949003e-10;
+  	R  				2.398864e+09;
+  	Z  				2.133926e+09;
+  	outIndex 			1;
+	FDM_order			3;	
+	Flowrate_threeStepBefore      	0;
+	Flowrate_twoStepBefore        	0;
+	Flowrate_oneStepBefore        	0;
+	Pressure_twoStepBefore        	0;
+	Pressure_oneStepBefore        	0;
+	Pressure_start                	0;
+
+}
+
+OUTLET3
+{
+  	C  				3.949003e-10;
+  	R  				2.398864e+09;
+  	Z  				2.133926e+09;
+  	outIndex 			2;
+	FDM_order			3;	
+	Flowrate_threeStepBefore      	0;
+	Flowrate_twoStepBefore        	0;
+	Flowrate_oneStepBefore        	0;
+	Pressure_twoStepBefore        	0;
+	Pressure_oneStepBefore        	0;
+	Pressure_start                	0;
+
+}
+
+
+
+// ************************************************************************* //
