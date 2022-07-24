@@ -22,10 +22,15 @@ In the case directory:
 1. In 0/p, specify Windkessel outlet boundary condition as follows
 
     OUTLET_NAME
+    
     {
+    
 	      type    WKBC;
+	      
 	      index		0;
+	      
 	      value		uniform 0;
+	      
     }
 
     The only user input is 'index' and is increased by an integer with each additional outlet.
@@ -46,9 +51,14 @@ In the case directory:
     	...
 
     Flowrate_threeStepBefore      	0;
+    
     Flowrate_twoStepBefore        	0;
+    
     Flowrate_oneStepBefore        	0;
+    
     Pressure_twoStepBefore        	0;
+    
     Pressure_oneStepBefore        	0;
+    
     Pressure_start                	0;
     }
